@@ -1,6 +1,7 @@
 import {
     Route, Routes
 } from "react-router-dom";
+import Demo from "../components/forms/Demo";
 import Demo2 from "../components/forms/Demo2";
 import DashboardLayout from "../layouts/DashboardLayout";
 import Dummy from "../pages/Dummy";
@@ -14,12 +15,13 @@ export default function Router() {
             <Routes>
                
                 <Route path="/" element={<Dummy />} >
-                <Route index element={<Dummy />} />
+                {/* <Route index element={<Dummy />} /> */}
                 </Route>
                 <Route path="/*" element={<DashboardLayout />} >
                     {/* <Route index element={<Home />} /> */}
                     <Route path="country" element={<Demo2 />} />
                     <Route path="one" element={<Home />} />
+                    <Route path="dashboard" element={<Demo />} />
                     <Route path="*" element={<NotFound/>} />
                 </Route>
                 <Route path="*" element={<NotFound/>} />
