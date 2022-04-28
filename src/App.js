@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+Title: Admin Panel
+Description : Admin Panel
+Author: Habibur Rahman Sobuj
+Date: 22/04/2022
+*/
 
+// import 
+import { ThemeProvider } from 'next-themes';
+import Router from "./route/Router";
+
+// function define 
 function App() {
+  console.log(process.env.GENERATE_SOURCEMAP);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider attribute='class' enableSystem={false}>
+        {/* router  */}
+        <Router />
+      </ThemeProvider>
+    </>
   );
 }
 
