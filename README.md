@@ -21,7 +21,7 @@ Here is some screenshots. And please note, because this project is still in prog
 Hope you love it!
 
 
-![Home](./screenshots/Admin-Panel-React-js-Tailwind-CSS-dark)
+![Home](./screenshots/Admin-Panel-React-js-Tailwind-CSS-dark.png)
 
 ![Home](./screenshots/Admin-Panel-React-js-Tailwind-CSS-light.png)
 
